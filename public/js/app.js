@@ -7,8 +7,8 @@ const messageTwo = document.querySelector('#message-2')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault() 
+    
     const url = '/weather?address=' + search.value
-
     messageOne.textContent = 'Loading...'
     fetch(url,{
         headers : { 
@@ -25,4 +25,5 @@ weatherForm.addEventListener('submit', (e) => {
             }
         })
     })
+
 })

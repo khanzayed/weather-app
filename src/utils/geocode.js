@@ -1,26 +1,26 @@
 const request = require('request')
 
-const https = require('https')
-const url = 'https://api.darksky.net/forecast/099a255e252363f56f248ec55a9596b5/40,-75'
+// const https = require('https')
+// const url = 'https://api.darksky.net/forecast/099a255e252363f56f248ec55a9596b5/40,-75'
 
-const task = https.request(url, (response) => {
-    let data = ''
+// const task = https.request(url, (response) => {
+//     let data = ''
 
-    response.on('data', (chunk) => {
-        data = data + chunk
-    })
+//     response.on('data', (chunk) => {
+//         data = data + chunk
+//     })
 
-    response.on('end', () => {
-        console.log(JSON.parse(data))
-    })
+//     response.on('end', () => {
+//         console.log(JSON.parse(data))
+//     })
 
-})
+// })
 
-task.on('error', (error) => {
+// task.on('error', (error) => {
 
-})
+// })
 
-task.end()
+// task.end()
 
 const geocode = (address, callback) => {
     const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + address + '.json?access_token=pk.eyJ1IjoiZmhhYmliNCIsImEiOiJjazFzNWx4bG8wMmNnM2hxeWR0cDR4MW12In0.8ygc7cNA9HEyHjvv-KRGOQ'
