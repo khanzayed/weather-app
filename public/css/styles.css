@@ -38,7 +38,7 @@ a {
 }
 
 .portrait {
-    width: 100px;
+    width: 70px;
 }
 
 input {
@@ -54,6 +54,10 @@ button {
     padding: 8px;
 }
 
-p {
+.summary {
     font-size: 12px;
+}
+
+p {
+    font-size: 13px;
 }
